@@ -1,3 +1,6 @@
+import com.acmerobotics.dashboard.config.Config;
+
+@Config 
 @TeleOp(name = "P Controller Test")
 public class PControllerTest extends LinearOpMode {
 
@@ -8,8 +11,8 @@ public class PControllerTest extends LinearOpMode {
     static final double WHEEL_DIAMETER = 1.378;
     static final double CIRCUMFERENCE  = Math.PI * WHEEL_DIAMETER;
 
-    static final double kP     = 0.05;  // start small, tune later
-    static final double TARGET = 24.0;  // drive 24 inches forward
+    public static double kP     = 0.05;  // start small, tune later
+    public static double TARGET = 24.0;  // drive 24 inches forward
 
     @Override
     public void runOpMode() {
