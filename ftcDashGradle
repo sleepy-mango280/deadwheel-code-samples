@@ -1,0 +1,9 @@
+repositories {
+    google()
+    mavenCentral()
+    maven { url = 'https://maven.brott.dev/' }   // add this line
+}
+
+dependencies {
+    implementation 'com.acmerobotics.dashboard:dashboard:0.6.0'   // add this line
+}
