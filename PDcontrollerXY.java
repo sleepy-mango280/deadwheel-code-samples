@@ -1,3 +1,5 @@
+import com.acmerobotics.dashboard.config.Config;
+
 @Config
 @TeleOp(name = "PD Controller XY")
 public class PDControllerXY extends LinearOpMode {
